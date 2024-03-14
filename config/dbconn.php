@@ -5,8 +5,7 @@ $PASS="conect";
 $DB="escuela";
 
 //CONEXION CON BASE DE DATOS
-$DBCONN=new mysqli($HOST,$USER,$PASS,$DB);
-if($DBCONN->connect_error) 
+$DBCONN=new mysqli($HOST,$USER,$PASS,$DB) or
 die("error de conexion ".$DBCONN->connect_error);
 ?>
 
