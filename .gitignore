@@ -1,0 +1,8 @@
+# ARCHIVOS EXCLUIDOS
+*.log
+*.txt
+*.doc
+# CARPETAS EXCLUIDAS
+docs/
+temp/
+tmp/
