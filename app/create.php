@@ -1,5 +1,4 @@
 <?php
-foreach($_POST as $KEY=>$VALUE){
-    echo"$KEY=$VALUE";
-}
+    include "functions.php";
+    Arraymap($_POST);
 ?>

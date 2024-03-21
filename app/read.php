@@ -1,5 +1,4 @@
 <?php
-foreach($_GET as $KEY=>$VALUE){
-    echo"$KEY=$VALUE";
-}
+include "functions.php";
+Arraymap($_GET);
 ?>
