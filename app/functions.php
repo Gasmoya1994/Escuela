@@ -4,4 +4,7 @@
             echo"$KEY:$VALUE, ";
         }
     }
+    function Methodparse($ARRAY){
+        parse_str(file_get_contents("php://input"),$ARRAY);
+    }
 ?>
