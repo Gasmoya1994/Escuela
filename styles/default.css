@@ -7,3 +7,11 @@ header{
     font-size: medium;
     border-radius: 1.25rem;
 }
+/*ESTILOS DEL PIE DE PÁGINA*/
+footer{
+    background-color: cadetblue;
+    background-image: -moz-linear-gradient(cadetblue,#f0f);
+    padding: .5rem;
+    font-size: small;
+    border-radius: 1.5rem;
+}
