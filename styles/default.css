@@ -1,1 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans;");
+/*ESTILOS DE CABECERA*/
+header{
+    background-color: aqua;
+    background-image: linear-gradient(aqua,#6525);
+    padding: .5rem;
+    font-size: medium;
+    border-radius: 1.25rem;
+}
