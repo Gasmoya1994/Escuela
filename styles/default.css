@@ -6,3 +6,26 @@
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
+/* Reinicio de estilos */
+body,
+h1,
+h2,
+h3,
+header p,
+.menu{
+    margin: 0;
+}
+.menu,
+.list-unstyled{
+    padding: 0;
+}
+iframe{
+    border: 0;
+}
+.menu,
+.list-unstyled{
+    list-style: none;
+}
+:is(.menu, .social) a{
+    text-decoration: none;
+}
