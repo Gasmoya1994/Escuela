@@ -27,6 +27,7 @@
         session_start();
         $url=$_SERVER["PHP_SELF"];
         if(isset($_SESSION["usuario"]) && !is_null($_SESSION["usuario"])){
+            include "public/nav.php";
             include "main.php";
         }
         else{
