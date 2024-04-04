@@ -8,6 +8,7 @@ include "head.php";
     include "header.php";
     checksession();
     include "footer.php";
+    include "scripts.php";
     ?>
 </body>
 </html>
