@@ -1,4 +1,5 @@
 <?php
+include "config/dbconn.php";
 Arraymap($_GET);
 $COLUMNAS=$DBCONN->query("show columns from ".$_GET["tabla"]);
 $RESULTADOS=$DBCONN->query("select * from ".$_GET["tabla"]);
@@ -26,6 +27,9 @@ function cuerpotabla($ARRAY){
     <thead>
         <tr>
             <?php encabezados($COLUMNAS) ?>
+        </tr>
+        <tr>
+            <?php cuerpotabla($RESULTADOS) ?>
         </tr>
     </thead>
 </table>
