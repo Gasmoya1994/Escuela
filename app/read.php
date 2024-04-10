@@ -28,8 +28,8 @@ function cuerpotabla($ARRAY){
         <tr>
             <?php encabezados($COLUMNAS) ?>
         </tr>
-        <tr>
-            <?php cuerpotabla($RESULTADOS) ?>
-        </tr>
     </thead>
+    <tbody>  
+        <?php cuerpotabla($RESULTADOS) ?>
+    </tbody>
 </table>
