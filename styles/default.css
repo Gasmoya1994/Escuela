@@ -49,4 +49,16 @@ table{
     width: 100%;
     max-width: 960px;
     margin: 1rem auto;
+    background: #448 linear-gradient(#36c,#448);
+    color: #ccc;
+}
+/* TABLA CAPTION */
+table caption{
+    background-color: #448;
+    color: #ccc;
+}
+table caption,
+th,
+td{
+    padding: .25rem .5rem;
 }
