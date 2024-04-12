@@ -23,7 +23,7 @@ function cuerpotabla($ARRAY){
 }
 ?>
 <table>
-    <caption>Registros de <?php $TABLA ?> </caption>
+    <caption>Registros de <?php echo $TABLA ?> </caption>
     <thead>
         <tr>
             <?php encabezados($COLUMNAS) ?>
