@@ -62,3 +62,6 @@ th,
 td{
     padding: .25rem .5rem;
 }
+table tr:nth-child(even){
+    background-color: #ccc3;
+}
