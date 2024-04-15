@@ -31,3 +31,11 @@ function cuerpotabla($ARRAY){
         <?php cuerpotabla($RESULTADOS) ?>
     </tbody>
 </table>
+<h2>Formulario</h2>
+<?php
+switch($TABLA){
+    case "materias":
+        include "forms/materias.php";
+    break;
+}
+?>
