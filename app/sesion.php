@@ -18,6 +18,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     if($RESULTS->num_rows==1){
         session_start();
         $_SESSION["usuario"]=$usuario;
+        header("location: ./?tabla=usuarios");
     }
 }
 ?>
