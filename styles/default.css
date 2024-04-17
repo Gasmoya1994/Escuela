@@ -65,3 +65,15 @@ td{
 table tr:nth-child(even){
     background-color: #ccc3;
 }
+/* Formularios */
+form{
+    display: grid;
+    padding: .5rem;
+}
+label{
+    margin-top: .5rem;
+}
+input{
+    border: .1rem solid;
+    border-radius: .25rem;
+}
