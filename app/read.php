@@ -33,9 +33,5 @@ function cuerpotabla($ARRAY){
 </table>
 <h2>Formulario</h2>
 <?php
-switch($TABLA){
-    case "materias":
-        include "forms/materias.php";
-    break;
-}
+    include "forms/$TABLA.php";
 ?>

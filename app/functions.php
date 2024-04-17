@@ -1,24 +1,43 @@
 <?php
     function Arraymap($ARRAY){
         extract($ARRAY);
-        $SQL = " INSERT INTO $tabla";
+        $SQL = " INSERT INTO ";
+        $SQL.=  " $tabla SET ";
         switch($tabla){
             case "asignaturas":
-                $SQL.="(ID_usuario, ID_materia, Dias, Horario) VALUES ('$ID_usuario', '$ID_materia', '$Dias', '$Horario')";
+                $SQL.="
+                ID_usuario = '$ID_usuario', 
+                ID_materia = '$ID_materia', 
+                Dias = '$Dias', 
+                Horario = '$Horario'";
             break;
             case "calificaciones":
-                $SQL.="(ID_Asignatura, Nota, Trimestre, Fecha) VALUES ('$ID_Asignatura', '$Nota', '$Trimestre', '$Fecha')";
+                $SQL.="
+                ID_Asignatura = '$ID_Asignatura', 
+                Nota = '$Nota', 
+                Trimestre = '$Trimestre', 
+                Fecha = '$Fecha'";
             break;
             case "datos_usuarios":
-                $SQL.="(id_Usuario, Nombre, Apellido, Tipo_Documento, Numero_Documento, Direccion, id_Nacionalidad
-                ) VALUES ('$id_Usuario', '$Nombre', '$Apellido', '$Tipo_Documento', '$Numero_Documento', '$Direccion', '$id_Nacionalidad'
-                )";
+                $SQL.="
+                id_Usuario = '$id_usuario',
+                Nombre = '$nombre',
+                Apellido = '$apellido',
+                Tipo_Documento = '$tipo_documento',
+                Numero_Documento = '$numero_documento',
+                Direccion = '$direccion',
+                id_Nacionalidad = '$id_nacionalidad'";
             break;
             case "usuarios":
-                $SQL.="(usuario, Mail, clave) VALUES ('$usuario', '$Mail', '$clave')";
+                $SQL.="
+                usuario = '$Usuario', 
+                Mail = '$correo',
+                clave = '$clave'";
             break;
             default:
-                $SQL.="(Nombre, Descripcion) VALUES ('$nombre', '$descripcion')";
+                $SQL.="
+                Nombre = '$nombre', 
+                Descripcion = '$descripcion'";
         }
         return $SQL;
     }
