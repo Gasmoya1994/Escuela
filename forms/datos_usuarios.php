@@ -1,5 +1,6 @@
 <!-- id_Usuario	Nombre	Apellido	Tipo_Documento	Numero_Documento	Direccion	id_Nacionalidad -->
-<form action="">
+<form method="post">
+    <input type="hidden" value="datos_usuarios" name="tabla">
     <label for="id_usuario">Ingrese su usuario</label>
     <input type="search" list="lista-usuarios" id="id_usuario" name="id_usuario">
     <datalist id="lista-usuarios">
