@@ -27,7 +27,12 @@ function cuerpotabla($ARRAY){
         echo "<tr> <td> NO SE ENCONTRARON RESULTADOS </td> </tr>";
     }
 }
+echo "<section class='col col-lg-4'>";
+echo "<h2>Formulario</h2>";
+include "forms/$TABLA.php";
+echo "</section>";
 ?>
+<section class="col table-responsive container">
 <table class="table table-dark table-striped">
     <caption>Registros de <?php echo $TABLA ?> </caption>
     <thead>
@@ -37,7 +42,4 @@ function cuerpotabla($ARRAY){
         <?php cuerpotabla($RESULTADOS) ?>
     </tbody>
 </table>
-<h2>Formulario</h2>
-<?php
-    include "forms/$TABLA.php";
-?>
+</section>
