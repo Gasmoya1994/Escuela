@@ -2,7 +2,7 @@
 <form method="post">
     <input type="hidden" name="tabla" value="asignaturas">
     <label for="ID_usuario">usuario</label>
-    <input type="search" name="ID_usuario" list="lista-usuarios" id="ID_usuario">
+    <input type="search" class="form-control" name="ID_usuario" list="lista-usuarios" id="ID_usuario">
     <datalist id="lista-usuarios">
         <?php
         $SQL="select * from usuarios";
@@ -13,7 +13,7 @@
         ?>
     </datalist>
     <label for="ID_materia">materia</label>
-    <select name="ID_materia" id="ID_materia">
+    <select name="ID_materia" class="form-control" id="ID_materia">
         <?php
         $SQL="select * from materias";
         $RESULTADOS=$DBCONN->query($SQL);
@@ -23,14 +23,14 @@
         ?>
     </select>
     <label for="Dias">dias</label>
-    <select name="Dias" id="Dias" multiple>
+    <select name="Dias" id="Dias" class="form-control" multiple>
         <?php
         $DIAS=['L','M','X','J','V'];
         foreach($DIAS as $D) echo "<option value='$D'>$D</option>";
         ?>
     </select>
     <label for="Horario">horarios</label>
-    <select name="Horario" id="Horario">
+    <select name="Horario" class="form-control" id="Horario">
         <?php
         $HORAS=0;
         while($HORAS<24){
