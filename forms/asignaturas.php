@@ -26,9 +26,7 @@
     <select name="Dias" id="Dias" multiple>
         <?php
         $DIAS=['L','M','X','J','V'];
-        foreach($DIAS as $D){
-            echo "<option value='$D'>$D</option>";
-        }
+        foreach($DIAS as $D) echo "<option value='$D'>$D</option>";
         ?>
     </select>
     <label for="Horario">horarios</label>
@@ -40,7 +38,6 @@
             $HORAS++;
         }
         ?>
-
     </select>
     <button>ACEPTAR</button>
 </form>

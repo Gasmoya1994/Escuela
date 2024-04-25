@@ -13,7 +13,7 @@ function listartablas($ARRAY){
 } 
 
 ?>
-<nav class="navbar navbar-dark navbar-expand-md bg-dark p-2">
+<nav class="navbar navbar-dark navbar-expand-md bg-dark p-2 sticky-top">
     <a class="navbar-brand" href="#">escuela</a>
     <button data-bs-target=".navbar-nav" data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-icon"></button>
     <ul class="navbar-nav navbar-collapse collapse">
